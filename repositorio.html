@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login de usuario</title>
+	<link rel="stylesheet" type="text/css" href="librerias/bootstrap/css/bootstrap.css">
+	<script src="librerias/jquery-3.2.1.min.js"></script>
+	<script src="js/funciones.js"></script>
+</hea>
+<body style="background-color: #e8dd94">
+	<br><br><br>d
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4"></div>
+			<div class="col-sm-4">
+				<div class="panel panel-primary">
+					<div class="panel panel-heading">PANADERÍA LUPITA</div>
+					<div class="panel panel-body">
+						<p>
+						<center>
+							<img src="img/logo.jpg"  height="200">
+						</center>
+						</p>
+						<form id="frmLogin">
+							<label>Usuario</label>
+							<input type="text" class="form-control input-sm" name="usuario" id="usuario">
+							<label>Password</label>
+							<input type="password" name="password" id="password" class="form-control input-sm">
+							<p></p>
+							<span class="btn btn-primary btn-sm" id="entrarSistema">Entrar</span>
+							<?php  if(!$validar): ?>
+							<a href="registro.php" class="btn btn-danger btn-sm">Registrar</a>
+							<?php endif; ?>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4"></div>
+		</div>
+	</div>
+</body>
+</html>
+
